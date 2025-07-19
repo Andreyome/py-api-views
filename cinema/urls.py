@@ -29,8 +29,8 @@ urlpatterns = [
     path("", include(router.urls)),
     path("genres/", GenreList.as_view(), name="genres_list"),
     path("genres/<int:pk>/", GenreDetail.as_view(), name="genres_detail"),
-    path("actors/", ActorList.as_view(), name="actors"),
-    path("actors/<int:pk>/", ActorDetail.as_view(), name="actors"),
+    path("actors/", ActorList.as_view(), name="actors_list"),
+    path("actors/<int:pk>/", ActorDetail.as_view(), name="actors_detail"),
 ]
 
 app_name = "cinema"
