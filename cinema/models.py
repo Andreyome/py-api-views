@@ -15,6 +15,9 @@ class CinemaHall(models.Model):
     rows = models.IntegerField()
     seats_in_row = models.IntegerField()
 
+    class Meta:
+        ordering = ['name']
+
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
