@@ -16,7 +16,7 @@ class CinemaHall(models.Model):
     seats_in_row = models.IntegerField()
 
     class Meta:
-        ordering = ['name']
+        ordering = ["name"]
 
 
 class Movie(models.Model):
